@@ -1,0 +1,83 @@
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f9fafb;
+  padding: 2rem 1rem;
+}
+
+/* --- Container Layout --- */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Typography & Sections --- */
+h1 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+/* --- Links & Buttons --- */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* --- Projects Section --- */
+.project {
+  background-color: #f3f4f6;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #2563eb;
+}
+
+.project h3 {
+  font-size: 1.2rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+footer {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.5rem;
+}
