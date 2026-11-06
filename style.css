@@ -66,22 +66,83 @@ header.hero .container .btn:hover {
   text-decoration: none;
 }
 /* Custom styling for the About Me card */
-.about-card {
-  border-top: 4px solid #2563eb; /* Adds a clean blue accent line at the top */
+/* This controls the full-width section with your Canada landscape photo */
+/* The section holding your background photo */
+.about-section {
+  /* Points to your background photo inside the images folder */
+  background-image: url('images/daniel-vis-5NO1-QwFSQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Adds breathing room and centers content */
+  padding: 5rem 1rem;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
+/* Optional dark overlay on the background photo so the card pops more */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Ensures content sits above the background overlay */
+.about-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* The card itself with frosted-glass effect */
+.about-card {
+  background: rgba(255, 255, 255, 0.88); /* Semi-transparent white */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: left;
+}
+
+/* The badge styling */
 .about-badge {
   display: inline-block;
-  background-color: #eff6ff;
-  color: #2563eb;
-  font-size: 0.85rem;
+  background-color: #2563eb; /* Clean professional blue */
+  color: #ffffff;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  margin-bottom: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Heading & Text styling */
+.about-card h2 {
+  color: #1e293b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-card p {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 /* --- Container Layout --- */
