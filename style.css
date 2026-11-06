@@ -70,7 +70,7 @@ header.hero .container .btn:hover {
 /* The section holding your background photo */
 .about-section {
   /* Points to your background photo inside the images folder */
-  
+  background-color: blue;
   background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/daniel-vis-5NO1-QwFSQ-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -145,6 +145,7 @@ header.hero .container .btn:hover {
   line-height: 1.7;
 }
 #projects {
+  background-color: green;
     /* Your background styling with the gradient overlay */
     background-size: cover;
     background-position: center;
@@ -210,6 +211,7 @@ C
 
 /* --- Footer --- */
 footer {
+  background-color: yellow;
   margin-top: 2.5rem;
   text-align: center;
   font-size: 0.875rem;
