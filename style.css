@@ -65,6 +65,24 @@ header.hero .container .btn:hover {
   background-color: #1d4ed8;
   text-decoration: none;
 }
+/* Custom styling for the About Me card */
+.about-card {
+  border-top: 4px solid #2563eb; /* Adds a clean blue accent line at the top */
+  position: relative;
+}
+
+.about-badge {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
 /* --- Container Layout --- */
 .container {
