@@ -71,7 +71,7 @@ header.hero .container .btn:hover {
 .about-section {
   /* Points to your background photo inside the images folder */
   background-color: blue;
-  background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/mariano-baraldi-3fYWJrB2BRU-unsplash.jpg');
+  background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('');
   background-position: center;
   background-repeat: no-repeat;
   
