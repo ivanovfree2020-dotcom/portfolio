@@ -13,10 +13,10 @@ body {
 }
 
 /* --- Hero Header Section --- */
+/* --- Hero Header Section --- */
 header.hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-              url('images/canada-bg.jpg') no-repeat center center/cover;
-  
+              url('images/daniel-sessler-1rNillZrlZk-unsplash.jpg') no-repeat center center/cover;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -26,21 +26,30 @@ header.hero {
   padding: 2rem;
 }
 
-/* Target the container specifically inside the hero header */
+/* Make the container inside the hero completely transparent with no white background */
+header.hero .container {
+  background-color: transparent;
+  box-shadow: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Hero Typography */
 header.hero .container h1 {
   font-size: 3rem;
   margin-bottom: 1.25rem;
   font-weight: 700;
-  color: #ffffff; /* Ensures the text is white against the landscape */
+  color: #ffffff;
 }
 
 header.hero .container p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: #f3f4f6; /* Soft white/light gray so it's easy to read */
+  color: #f3f4f6;
 }
 
-/* Style the button inside the hero container */
+/* Hero Button */
 header.hero .container .btn {
   background-color: #2563eb;
   color: white;
