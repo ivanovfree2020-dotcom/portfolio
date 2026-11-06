@@ -70,8 +70,8 @@ header.hero .container .btn:hover {
 /* The section holding your background photo */
 .about-section {
   /* Points to your background photo inside the images folder */
-  background-image: url('images/daniel-vis-5NO1-QwFSQ-unsplash.jpg');
-  background-size: cover;
+  
+  background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/daniel-vis-5NO1-QwFSQ-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   
@@ -144,6 +144,16 @@ header.hero .container .btn:hover {
   font-size: 1.05rem;
   line-height: 1.7;
 }
+#projects {
+    /* Your background styling with the gradient overlay */
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/daniel-vis-5NO1-QwFSQ-unsplash.jpg');
+    
+    /* Make text white so it stands out against the dark photo overlay */
+    color: white;
+    padding: 5rem 0;
+}
 
 /* --- Container Layout --- */
 .container {
@@ -190,13 +200,7 @@ a:hover {
 }
 
 /* --- Projects Section --- */
-.project {
-  background-color: #f3f4f6;
-  padding: 1.25rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  border-left: 4px solid #2563eb;
-}
+C
 
 .project h3 {
   font-size: 1.2rem;
