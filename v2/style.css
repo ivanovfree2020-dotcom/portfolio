@@ -1,0 +1,29 @@
+/* 1. Reset default browser margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Style the Header */
+.hero {
+  /* Replace 'path/to/your-image.jpg' with your actual image path or folder structure */
+  background-image: url('chris-czermak-g5WFdL5Cub0-unsplash.jpg');
+  
+  /* Makes the image cover the entire section */
+  background-size: cover;
+  
+  /* Centers the image in the section */
+  background-position: center;
+  
+  /* Prevents the image from repeating like a tile */
+  background-repeat: no-repeat;
+  
+  /* Give the section enough height to display the background well */
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Ensures your text stands out over the photo */
+}
