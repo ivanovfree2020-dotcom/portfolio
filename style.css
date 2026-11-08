@@ -34,22 +34,43 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
-
 .about-section {
-    padding: 80px 20px;
-    /* Replace background-color with your background image and overlay */
-    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('') no-repeat center center/cover;
-    color: #333;
-    display: flex;
-    justify-content: center;
+  background-color: #ffffff; /* Pure white background */
+  color: #222222;          /* Clean dark text for high readability */
+  padding: 5rem 1rem;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.about-card {
+  /* Semi-transparent white card with a frosted glass blur */
+  background-color: rgba(255, 255, 255, 0.25); 
+  
+   /* For Safari support */
+  
+  color: #1f2937; /* Dark text for easy reading */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 4px solid #2563eb; /* Clean blue accent line */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .about-container {
     max-width: 900px;
-    background: #ffffff;
+    /* Use semi-transparent white and backdrop-filter instead of solid white */
+    background: rgba(255, 255, 255, 0.25); 
+    
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .about-container h2 {
@@ -82,12 +103,15 @@ body {
 }
 
 .highlight-card {
-    background: #fdfdfd;
-    border: 1px solid #eaeaea;
+    color:#333;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.highlight-card * {
+    color: currentColor;
 
 .highlight-card:hover {
     transform: translateY(-3px);
@@ -104,4 +128,20 @@ body {
     font-size: 0.95rem;
     margin-bottom: 0;
     color: #666;
+}
+.about-section h2, 
+.about-section h3 {
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.about-section p, 
+.about-section li {
+    color: #f8f8fc;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+.highlight-card p,
+.highlight-card li,
+.highlight-card span {
+    color: #2c3e50 !important; /* A dark, readable slate color */
 }
