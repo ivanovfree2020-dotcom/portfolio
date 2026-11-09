@@ -4,100 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quebec City Local Guide - Ant.dev</title>
+    <!-- Link to your external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header class="page-header">
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
-        </ul>
-        <!-- Mobile Hamburger Menu Button -->
-        <div class="hamburger" id="hamburger-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
+    <!-- Header / Hero Section -->
+    <header class="hero-section">
+        <h1>Quebec City: History & Landmarks</h1>
+        <p>Explore the historic heart of North America’s only fortified city north of Mexico.</p>
     </header>
 
-    <!-- Main Guide Content -->
-    <main class="guide-container">
-        
-        <!-- Page Title & Intro -->
-        <div class="guide-hero-text">
-            <h1>Quebec City: History & Landmarks</h1>
-            <p>Explore the historic heart of North America’s only fortified city north of Mexico.</p>
-        </div>
+    <!-- Main Container holding your structured sections -->
+    <div class="container">
 
-        <!-- Featured Article Section -->
-        <section class="card" style="margin-bottom: 2.5rem; padding: 2rem;">
-            <h2>The Cradle of New France</h2>
-            <p>Established in 1608 by explorer Samuel de Champlain, Quebec City boasts a rich military, political, and cultural heritage. Its historic district (Old Quebec) is a UNESCO World Heritage treasure enclosed by centuries-old stone walls, featuring European-style cobblestone streets, iconic architecture, and breathtaking views of the St. Lawrence River.</p>
+        <!-- Section 1: The Cradle of New France -->
+        <section class="guide-section">
+            <div class="article-content">
+                <h2>The Cradle of New France</h2>
+                <p>Established in 1608 by explorer Samuel de Champlain, Quebec City boasts a rich military, political, and cultural heritage. Its historic district (Old Quebec) is a UNESCO World Heritage treasure enclosed by centuries-old stone walls, featuring European-style cobblestone streets, iconic architecture, and breathtaking views of the St. Lawrence River.</p>
+            </div>
+            <div class="photo-container">
+                <img src="images/old-quebec.jpg" alt="Old Quebec cobblestone streets">
+            </div>
+        </section>
+        
+
+        <!-- Section 2: Château Frontenac -->
+        <section class="guide-section">
+            <div class="article-content">
+                <h2>Château Frontenac</h2>
+                <p>Perched high on Cape Diamond, this majestic grand railway hotel is widely considered the most photographed hotel in the entire world, defining the city's iconic skyline.</p>
+            </div>
+            <div class="photo-container">
+                <img src="images/chateau-frontenac.jpg" alt="Fairmont Le Château Frontenac">
+            </div>
         </section>
 
-        <!-- Cards Grid with Images & Articles -->
-        <div class="cards-grid">
-            
-            <!-- Landmark 1: Château Frontenac -->
-            <article class="card">
-                <!-- Image placeholder: drop your image filename in src="" later -->
-                <!-- <img src="images/frontenac.jpg" alt="Château Frontenac towering over Quebec City" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;"> -->
-                <div class="card-content">
-                    <h3>Château Frontenac</h3>
-                    <p>Perched high on Cape Diamond, this majestic grand railway hotel is widely considered the most photographed hotel in the entire world, defining the city's iconic skyline.</p>
-                    <span class="card-tag">Upper Town</span>
-                </div>
-            </article>
+        <!-- Section 3: The Citadelle of Québec -->
+        <section class="guide-section">
+            <div class="article-content">
+                <h2>The Citadelle of Québec</h2>
+                <p>An active military installation and North America's oldest British-style fortress, shaped like a giant star and guarding the strategic heights of the city.</p>
+            </div>
+            <div class="photo-container">
+                <img src="images/citadelle.jpg" alt="The Citadelle of Québec">
+            </div>
+        </section>
 
-            <!-- Landmark 2: The Citadelle -->
-            <article class="card">
-                <!-- <img src="images/citadelle.jpg" alt="The Citadelle of Quebec" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;"> -->
-                <div class="card-content">
-                    <h3>The Citadelle of Québec</h3>
-                    <p>An active military installation and North America's oldest British-style fortress, shaped like a giant star and guarding the strategic heights of the city.</p>
-                    <span class="card-tag">Fortifications</span>
-                </div>
-            </article>
+        <!-- Section 4: Place Royale & Petit Champlain -->
+        <section class="guide-section">
+            <div class="article-content">
+                <h2>Place Royale & Petit Champlain</h2>
+                <p>The historic birthplace of French civilization on the continent, filled with 17th-century stone houses, artisan boutiques, and charming pedestrian alleyways.</p>
+            </div>
+            <div class="photo-container">
+                <img src="images/petit-champlain.jpg" alt="Place Royale and Petit Champlain district">
+            </div>
+        </section>
 
-            <!-- Landmark 3: Place Royale -->
-            <article class="card">
-                <!-- <img src="images/placeroyale.jpg" alt="Place Royale historic square" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;"> -->
-                <div class="card-content">
-                    <h3>Place Royale & Petit Champlain</h3>
-                    <p>The historic birthplace of French civilization on the continent, filled with 17th-century stone houses, artisan boutiques, and charming pedestrian alleyways.</p>
-                    <span class="card-tag">Lower Town</span>
-                </div>
-            </article>
+    </div>
 
-        </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Quebec City Local Guide - Ant.dev</p>
+    </footer>
 
-        <!-- Back Button to Return to Projects -->
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="projects.html" class="btn" style="text-decoration: none; display: inline-block;">&larr; Back to Projects</a>
-        </div>
-    </main>
-
-    <!-- Mobile Menu Script -->
-    <script>
-      const hamburger = document.getElementById('hamburger-btn');
-      const navLinks = document.querySelector('.nav-links');
-
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-      });
-
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          hamburger.classList.remove('active');
-          navLinks.classList.remove('active');
-        });
-      });
-    </script>
 </body>
 </html>
