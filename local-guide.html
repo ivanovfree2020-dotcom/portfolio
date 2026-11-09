@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebec City Local Guide - Ant.dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="page-header">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+        <!-- Mobile Hamburger Menu Button -->
+        <div class="hamburger" id="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Guide Content -->
+    <main class="guide-container">
+        
+        <!-- Page Title & Intro -->
+        <div class="guide-hero-text">
+            <h1>Quebec City Local Guide</h1>
+            <p>Handpicked historic spots, community hubs, and favorite places around town.</p>
+        </div>
+
+        <!-- Cards Grid Layout -->
+        <div class="cards-grid">
+            
+            <!-- Card 1: Morrin Centre -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>The Morrin Centre</h3>
+                    <p>A historic cultural gem nestled in the heart of Old Quebec, featuring a stunning Victorian-era library and rich Scottish heritage.</p>
+                    <span class="card-tag">Old Quebec</span>
+                </div>
+            </article>
+
+            <!-- Card 2: Patro Amadour -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Patro Amadour</h3>
+                    <p>A vibrant community hub and public recreation center offering local sports, swimming pools, and neighborhood activities.</p>
+                    <span class="card-tag">Limoilou</span>
+                </div>
+            </article>
+
+            <!-- Card 3: Université Laval -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Université Laval</h3>
+                    <p>Canada’s oldest francophone university boasting sprawling green campuses, modern architecture, and a rich academic history.</p>
+                    <span class="card-tag">Sainte-Foy</span>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Back Button to Return to Projects -->
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="projects.html" class="btn" style="text-decoration: none; display: inline-block;">&larr; Back to Projects</a>
+        </div>
+    </main>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const hamburger = document.getElementById('hamburger-btn');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+    </script>
+</body>
+</html>

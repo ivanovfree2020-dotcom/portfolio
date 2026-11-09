@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Ant.dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Shared Navigation Bar -->
+    <header class="page-header">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+        <!-- Hamburger Toggle for Mobile -->
+        <div class="hamburger" id="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Projects Main Content -->
+    <main class="guide-container">
+        <div class="guide-hero-text">
+            <h1>My Projects</h1>
+            <p>Explore the web apps and guides I am building.</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="cards-grid">
+            
+            <!-- Project Card linking to your Local Guide -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Quebec City Local Guide</h3>
+                    <p>Handpicked historic spots, community hubs, and favorite places around town built with CSS Grid.</p>
+                    <span class="card-tag">HTML / CSS</span>
+                </div>
+                <!-- This button/link connects to your local-guide.html file -->
+                <a href="local-guide.html" class="btn" style="margin-top: 1rem; display: inline-block; text-decoration: none;">View Project &rarr;</a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const hamburger = document.getElementById('hamburger-btn');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+    </script>
+    <script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
